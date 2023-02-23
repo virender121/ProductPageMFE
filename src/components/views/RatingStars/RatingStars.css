@@ -1,0 +1,13 @@
+
+
+.container {
+    display: flex;
+}
+
+.star{
+    /* display: flex; */
+     color: yellow;
+     border-color: none  ;
+
+    /* background-color: yellow; */
+}
