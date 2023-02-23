@@ -5,7 +5,8 @@ import classes from "./SingleProductCard.module.css";
 import RatingStars from "../RatingStars/RatingStars";
 import Button from "../Button/Button";
 import Card from "../Card/Card";
-
+// import ProductCard from 'HomePageMFE/ProductCard';
+import Text from 'LoginPageMFE/Text'
 /**
  * Impliments ProductCard component
  *
@@ -95,18 +96,18 @@ export const SingleProductCard = (props) => {
           </div>
           <div className={classes.frame}>
             <ul>
-            <li>
-            <h5 className={classes.fr1}>Paper wrapping</h5>
-            <h5 className={classes.fr2}>Green, Pink, Brown</h5>
-            <h5 className={classes.fr3}>500g</h5>
-            <h5 className={classes.fr4}>56%</h5>
-            <h5 className={classes.fr5}>cartoon</h5>
+              <li>
+                <h5 className={classes.fr1}>Paper wrapping</h5>
+                <h5 className={classes.fr2}>Green, Pink, Brown</h5>
+                <h5 className={classes.fr3}>500g</h5>
+                <h5 className={classes.fr4}>56%</h5>
+                <h5 className={classes.fr5}>cartoon</h5>
 
 
 
 
 
-            </li>
+              </li>
             </ul>
           </div>
         </div>
@@ -121,15 +122,16 @@ export const SingleProductCard = (props) => {
         </p>
         <h1 className={classes.head1}>Suggested Use</h1>
         <h1 className={classes.para3}>
-           Refrigeration not necessary.
+          Refrigeration not necessary.
 
-             Stir before serving
-         </h1>
+          Stir before serving
+        </h1>
         <h1 className={classes.head2}>Other Ingredients</h1>
         <p className={classes.para4}>Organic raw pecans, organic raw cashews. This butter was produced using a LTG (Low Temperature Grinding) process. Made in machinery that processes tree nuts but does not process peanuts, gluten, dairy or soy</p>
         <h1 className={classes.head3}>Warnings</h1>
         <p className={classes.para5}>Oil separation occurs naturally. May contain pieces of shell.</p>
       </div>
+      {/* <ProductCard /> */}
     </>
   );
 };
