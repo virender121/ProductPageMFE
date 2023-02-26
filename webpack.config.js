@@ -1,6 +1,8 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const dotenv = require("dotenv");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
+dotenv.config()
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
@@ -45,9 +47,9 @@ module.exports = {
       name: "ProductPageMFE",
       filename: "remoteEntry.js",
       remotes: {
-        HomePageMFE: 'HomePageMFE@http://localhost:3001/remoteEntry.js',
-        LoginPageMFE: 'LoginPageMFE@http://localhost:3002/remoteEntry.js',
-        CheckoutPageMFE: 'CheckoutPageMFE@http://localhost:3003/remoteEntry.js',
+        HomePageMFE: `HomePageMFE@${process.env.HomePageMFE}remoteEntry.js`,
+        LoginPageMFE: `LoginPageMFE@${process.env.LoginPageMFE}remoteEntry.js`,
+        CheckoutPageMFE: `CheckoutPageMFE@${process.env.CheckoutPageMFE}remoteEntry.js`,
       },
       exposes: {
         './SingleProductCard': './src/components/views/SingleProductCard/SingleProductCard.jsx',
