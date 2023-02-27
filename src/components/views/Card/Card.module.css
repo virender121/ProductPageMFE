@@ -1,49 +1,158 @@
-
-
 .container {
     box-sizing: border-box;
-
-/* position: absolute; */
-width: 646px;
-height: 650.14px;
-left: 302px;
-top: 272px;
-
-background: #FFFFFF;
-/* NestMart-BorderColor-1 */
-
-border: 1px solid #E5E5E5;
-border-radius: 15px;
-}
-
-.cardorange{
+  
     /* position: absolute; */
-width: 106.37px;
-height: 84.79px;
-left: 5.75px;
-top: 16.87px;
-margin-top: 12rem;
-}
-
-
-.strawberry{
+    width: 35rem;
+    height: 40rem;
+    left: 19rem;
+    top: 17rem;
+  
+    background: #ffffff;
+    /* NestMart-BorderColor-1 */
+  
+    border: 0.0625rem solid #e5e5e5;
+    border-radius: 0.9rem;
+  }
+  
+   .container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.4rem;
+    border-radius: 0.3rem solid black;
+    width: 73rem;
+    height: 23rem;
+    left: 23rem;
+    top: 150rem;
+  } 
+  
+  .cardorange {
+    /* position: absolute; */
+    width: 6.625rem;
+    height: 5rem;
+    left: 0.3rem;
+    top: 1.05rem;
+    margin-top: 15rem;
+  }
+  
+  .strawberry {
     position: absolute;
-width: 95.86px;
-height: 85.04px;
-left: 295.81px;
-top: 16.07px;
-margin-top: 40rem;
-
-}
-
-.lemmon{
+    width: 6rem;
+    height: 5rem;
+    left: 28rem;
+    top: 2.56rem;
+    margin-top: 40rem;
+    
+  }
+  
+  .lemmon {
     position: absolute;
-    width: 99px;
-    height: 70px;
-    left: 438.13px;
-    top: 23.76px;
-    margin-top: 39rem;
+    width: 6rem;
+    height: 4rem;
+    left: 38rem;
+    top: 40.25rem;
+    margin-top: 2.4rem;
     justify-content: space-around;
+  }
+  
+   .pizzabox {
+    box-sizing: border-box;
+  
+    width: 278.64px;
+    height: 375.88px;
+    left: 0px;
+    top: 0px;
     
+    background: #FFFFFF;
+  margin-top: 87rem;
     
-}
+    border: 0.935024px solid #E5E5E5;
+    border-radius: 14.0254px;
+    
+  } 
+  
+   .pizza {
+    position: absolute;
+    width: 9.8rem;
+    height: 9.6rem;
+    top: 2.5rem;
+    margin-top: 136rem;
+    margin-right: 24rem;
+    margin-left: 3rem;
+  } 
+  
+   .vegbox {
+    box-sizing: border-box;
+  
+  width: 278.64px;
+  height: 375.88px;
+  left: 301.08px;
+  top: 0px;
+  
+  background: #FFFFFF;
+  margin-top: 87rem;
+  border: 0.935024px solid #E5E5E5;
+  border-radius: 14.0254px
+  } 
+  
+   .veg { 
+    position: absolute;
+    width: 13rem;
+    height: 10rem;
+  
+    margin-top: 5rem;
+    margin-left: 1rem;
+  } 
+  
+  .root {
+    width: 12.8rem;
+    height: 8.4rem;
+    top: 2.9rem;
+    margin-top: 6rem;
+    margin-left: 3rem;
+  } 
+  
+  .shalgam {
+    position: absolute;
+    width: 13rem;
+    height: 10rem;
+  
+    margin-top: 5rem;
+    margin-left: 1rem;
+    
+  } 
+   .rootCard{
+    box-sizing: border-box;
+  
+  width: 390.77px;
+  height: 350.88px;
+  left: 602.16px;
+  top: 0px;
+  
+  background: #FFFFFF;
+  margin-top: 87rem;
+  border: 0.935024px solid #E5E5E5;
+  border-radius: 14.0254p
+  
+  } 
+    .turnipbox{
+    box-sizing: border-box;
+  
+  width: 278.64px;
+  height: 375.88px;
+  left: 901.36px;
+  top: 0px;
+  
+  background: #FFFFFF;
+  margin-top: 87rem;
+  border: 0.935024px solid #E5E5E5;
+  border-radius: 14.0254px;
+  } 
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

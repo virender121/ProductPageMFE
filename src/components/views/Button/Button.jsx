@@ -14,10 +14,11 @@ import classes from './Button.module.scss';
  */
 
 export const Button = (props) => {
+    const {onClick,className}=props
     return (
         <div className={classes.container}>
          
-            <button>Add to Cart</button>
+            <button onClick={onClick}>Add to Cart</button>
           
         </div>
     )
@@ -31,7 +32,12 @@ export const Button = (props) => {
  */
 
 export const propTypes = {
-    example: PropTypes.string
+    example: PropTypes.string,
+    onClick: PropTypes.string,
+    className: PropTypes.string
+
+    
+    
 };
 
 /**
