@@ -2,14 +2,15 @@ import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 
 import SingleProductCard from "./components/views/SingleProductCard/SingleProductCard";
-// import Navbar from "HomePageMFE/Navbar";
-// import Footer from "HomePageMFE/Footer";
+import Header from 'HomePageMFE/Header'
 
 
 
 
 
-// import Input from "./components/views/Input/Input";
+
+ import Footer from 'HomePageMFE/Footer'
+ 
 
 import "./index.scss";
 
@@ -22,19 +23,25 @@ const App = () => {
     window.matchMedia("(min-width:768)").addEventListener('change',e=> setMatches(e.matches))
   },[])
 return(
+   <>  
+   
+   <Header/>
 
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
   
-      {/* <Navbar/> */}
 
       {matches && <SingleProductCard/>}
       {!matches && <SingleProductCard/>}
 
-      {/* <Footer/> */}
       
       
       
   </div>
+  <div>
+  <Footer/>
+  </div>
+
+  </>
 );
 }
 ReactDOM.render(<App />, document.getElementById("app"));

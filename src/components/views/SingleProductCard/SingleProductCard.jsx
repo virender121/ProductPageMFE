@@ -10,6 +10,7 @@ import Text from 'LoginPageMFE/Text'
 import products from "../../../utils/products";
 
 
+
 /**
  * Impliments ProductCard component
  *
@@ -19,72 +20,54 @@ import products from "../../../utils/products";
  */
 
 export const SingleProductCard = (props) => {
-  const { price } = props;
+ 
 
-
-  function handleClick(){
-    alert ('added to cart')
-  }
+function handleClick(){
+  alert('added')
+}
 
   return (
     <>
-      {/* <div className={classes.container}>
-        {props.example}
-        <div className={classes.product}>
-          <Card />
-        </div>
 
-        <div className={classes.text}>
-          <h2>Seeds of Change Organic Quinoa, Brown</h2>
-          <RatingStars rating={4} />
-
-          <h2 className={classes.dollor}>{price}</h2>
-
-          <div className={classes.content}>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-              rem officia, corrupti reiciendis minima nisi modi, quasi, odio
-              minus dolore impedit fuga eum eligendi? Officia doloremque facere
-              quia. Voluptatum, accusantium! Uninhibited carnally hired played
-              in whimpered dear gorilla koala depending and much yikes off far
-              quetzal goodness and from for grimaced goodness.
-            </p>
-          </div>
-
-          <div className={classes.btn}>
-            <Button />
-          </div>
-        </div>
-      </div> */}
-
+<h1 className={classes.heading}>TOP HEALTHY FRUITS</h1>
      
 
-
+<div className={classes.container}>
       {products.map((product)=>{
-       const {id, productName, productImg, description}=product
+       const {id, productName, productImg, description, price}=product
        return (
-        <div className={classes.productItems} key={id}>
-    <div>
-      <span>
+        <div className={classes.container} key={id}>
+    <div className={classes.item1}>
+      <span className={classes.categories}>
         {description}
       </span>
-      <h2>{productName}</h2>
-      <img src={productImg}/>
-      <Button onClick={handleClick}/>
+      <h2 className={classes.title}>{productName}</h2>
+      <img src={productImg} className={classes.Img}/>
+      <RatingStars rating={4}/>
+
+      <h5 className={classes.price}>Price: ${price}</h5>
+      <Button className={classes.btn} onClick={handleClick}/>
     </div>
         </div>
        )
       }
       )}
-  
+         
+
+
+</div>
+<div>
+
+
+</div>
 
 
 
 
       {/* <ProductCard /> */}
     </>
-  );
-};
+);
+}
 
 /**
  * Property type definations

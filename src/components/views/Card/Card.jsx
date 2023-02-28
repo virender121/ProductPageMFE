@@ -13,41 +13,12 @@ import classes from './Card.module.css';
  * @returns Card
  */
 
-export const Card = (props) => {
-    const {Mango, orange, lemmon, strawberry,pizza, veg, root, shalgam}=props
+export const Card = () => {
 
-    const data = {
-        
-    }
+    
     return (
         <div className={classes.container}>
             
-            <img className={classes.cardmango} src={Mango}/>
-            <img className={classes.cardorange} src={orange}/>
-            <img className={classes.strawberry} src={strawberry}/>
-            <img className={classes.lemmon} src={lemmon}/>
-
-
-
-             <div className={classes.container1}>
-            <div className={classes.pizzabox}>
-            <img className={classes.pizza} src={pizza}/>
-            
-
-            </div>
-            <div className={classes.vegbox}>
-            <img className={classes.veg} src={veg}/>
-            </div>
-           
-             <div className={classes.rootCard}>
-            <img className={classes.root} src={root}/></div>
-            <div >
-                <div className={classes.turnipbox}>
-            <img className={classes.shalgam} src={shalgam}/>
-            </div>
-            </div>
-            </div> 
-
 
 
             

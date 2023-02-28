@@ -18,7 +18,7 @@ export const Button = (props) => {
     return (
         <div className={classes.container}>
          
-            <button onClick={onClick}>Add to Cart</button>
+            <button onClick={onClick} className={className}>Add to Cart</button>
           
         </div>
     )
