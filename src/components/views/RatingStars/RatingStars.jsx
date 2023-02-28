@@ -1,10 +1,64 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-// import {AiOutlineStar} from 'react-icons/ai';
-// import {FaStarHalfAlt} from 'react-icons/fa';
-//   import  {FaStar} from 'react-icons/fa'
 
 import  './RatingStars.css';
+
+
+
+
+
+
+const RatingStars = () => {
+  const [rating, setRating] = useState(0);
+  // const [color, setColor] = useState('white');
+
+  // const changeColor=()=>{
+  //   if(color==='white'){
+  //     setColor('yellow')
+  //   }else{
+  //     setColor('white')
+  //   }
+  // }
+
+
+  const handleClick = (value) => {
+    setRating(value);
+  };
+
+
+
+  const renderStars = () => {
+    const stars = [];
+
+    for (let i = 1; i <= 5; i++) {
+      const starClass = i <= rating ? "star active" : "star";
+
+      stars.push(
+        <span
+          key={i}
+          className={starClass}
+          onClick={() => handleClick(i)}
+        >
+          &#9733;
+        </span>
+      );
+    }
+
+    return stars;
+  };
+
+  return (
+    <div className="rating-stars" >
+      {/* <h1 style={{color}} onClick={changeColor}>{RatingStars}</h1> */}
+
+      {renderStars()}
+      <p className="rating-text">{rating > 0 ? `You rated this ${rating} star${rating > 1 ? 's' : ''}.` : 'Please rate this.'}</p>
+    </div>
+  );
+};
+
+
+
 
 
 
@@ -20,90 +74,24 @@ import  './RatingStars.css';
 
 
 
-// const RatingStars = (props) => {
 
-//   const {rating } = props;
-  
-//     return (
-//       <div>
-//         {[...Array(5)].map((_, i) => {
-//           const ratingValue = i + 1;
-//           {console.log(i)}
 
-//           return (
-//             <span
-//               key={ratingValue}
-//               className={ratingValue <= rating ? 'selected' : 'not-selected'}
-//  >
-//               <div className='star'>
-//               <span key={i}>
-//            {ratingValue>= i+1 ? (
-//               <img src='file:///C:/Users/hp/Downloads/001-star%205.svg' alt='filled star'/>
-             
-//            ):(
-//               <img src='file:///C:/Users/hp/Downloads/001-star%201.svg' alt='empty star'/>
-                 
-//             )
-//            }
-//           </span>
-             
-//               </div>
-//             </span>
-//           )
-//         })}
-//       </div>
-//     )
+
+
+
+// const RatingStars = ({ rating }) => {
+//   const stars = [];
+
+//   for (let i = 1; i <= 5; i++) {
+//     if (i <= rating) {
+//       stars.push(<span key={i} className="star">&#9733;</span>);
+//     } else {
+//       stars.push(<span key={i} className="star">&#9734;</span>);
+//     }
 //   }
 
-
-
-
-
-
-
-// const RatingStars=({stars, review})=> {
-//    const RatingStars= Array.from({length:5},(elem,index)=>{
-//         let number= index + 0.5;
-        
-//         return(
-//             <span key={index}>
-//           {stars>= index+1 ? (
-//             <FaStar />
-//           ): stars >= number ? (
-//             <FaStarHalfAlt />) : (
-//                 <AiOutlineStar className='star' />
-//             )
-//           }
-//             </span>
-
-//         )
-
-//     })
-//     return (
-//         <wrapper>
-//             <div>
-//                 {RatingStars}
-//                 {/* <p>{reviews}</p> */}
-//                  {/* console.log(RatingStars) */}
-//             </div>
-//         </wrapper>
-//     )
-// }
-
-
-const RatingStars = ({ rating }) => {
-  const stars = [];
-
-  for (let i = 1; i <= 5; i++) {
-    if (i <= rating) {
-      stars.push(<span key={i} className="star">&#9733;</span>);
-    } else {
-      stars.push(<span key={i} className="star">&#9734;</span>);
-    }
-  }
-
-  return <div>{stars}</div>;
-};
+//   return <div>{stars}</div>;
+// };
 
 
 

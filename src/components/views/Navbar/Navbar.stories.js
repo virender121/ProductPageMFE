@@ -1,13 +1,13 @@
 import React from 'react'
-import Header from './Header';
+import Navbar from './Navbar';
 
 
 
 export default {
-    title: 'Component/Header',
+    title: 'Component/Navbar',
     parameters: {
-        component: Header,
-        componentSubtitle:'this is my header page and here i am showing some main content in it',
+        component: Navbar,
+        componentSubtitle:'we add this navbar for showing navigating icons so that we can navigate to other page',
         docs: {
             description: {
                 component: ''
@@ -17,7 +17,7 @@ export default {
 };
 
 const Template = ( args ) => (
-    <Header {...args} />
+    <Navbar {...args} />
 )
 
 export const BasicUsage = Template.bind( {} );
@@ -26,5 +26,5 @@ BasicUsage.args = {}
 export const Playground = Template.bind( {} );
 
 Playground.args = {
-    title: 'Header'
+    title: 'Navbar'
 }

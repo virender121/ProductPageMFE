@@ -1,21 +1,47 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import ReactDOM from "react-dom";
-import Header from "./components/views/Header/Header";
+
 import SingleProductCard from "./components/views/SingleProductCard/SingleProductCard";
+import Header from 'HomePageMFE/Header'
 
 
-// import Input from "./components/views/Input/Input";
+
+
+
+
+ import Footer from 'HomePageMFE/Footer'
+ 
 
 import "./index.scss";
 
-const App = () => (
+const App = () => {
+
+  const[matches, setMatches]=useState(
+    window.matchMedia("(min-width: 768px)").matches
+  )
+  useEffect(()=>{
+    window.matchMedia("(min-width:768)").addEventListener('change',e=> setMatches(e.matches))
+  },[])
+return(
+   <>  
+   
+   <Header/>
+
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
   
-      <Header/>
 
-      <SingleProductCard/>
+      {matches && <SingleProductCard/>}
+      {!matches && <SingleProductCard/>}
+
+      
       
       
   </div>
+  <div>
+  <Footer/>
+  </div>
+
+  </>
 );
+}
 ReactDOM.render(<App />, document.getElementById("app"));

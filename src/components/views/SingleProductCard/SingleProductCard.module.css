@@ -1,47 +1,38 @@
 
 
-.container {
-    display: flex;
-    height: 1999.295654296875px;
-width: 1316px;
-left: 302px;
-top: 272px;
-border-radius: [object Object]px;
-position: relative;
-
+.item1{
+    width: 360px;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 20px;
+    float: left;
+    border: 1px #1a6600 solid;
     
-    
-
 }
 
-
-
-.mango{
-    height: 696.138916015625px;
-width: 646px;
-left: 302px;
-top: 272px;
-border-radius: 15px;
-
-
-
-
+.categories{
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
 }
 
-.text{
-    width: 630.71px;
-height: 97.97px;
-left: 987.29px;
-top: 324.96px;
+.product-Img{
+    height:200px;
+}
 
-/* NestMart/Heading 2 */
+.title{
+   
+width: 173.53px;
+height: 49px;
+left: 143px;
+top: 0px;
+
 
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
-line-height: 48px;
-/* or 120% */
+font-size: 16px;
+line-height: 20px;
 
 letter-spacing: -0.0004em;
 
@@ -50,590 +41,37 @@ letter-spacing: -0.0004em;
 color: #253D4E;
 }
 
-.dollor{
-    height: 78px;
-width: 123px;
-left: 988.0771484375px;
-top: 490.51922607421875px;
-border-radius: nullpx;
-
-}
-
-.content{
-    /* position: absolute; */
-    width: 626.14px;
-    height: 215.64px;
-    left: 991.86px;
-    top: 600.29px;
-    
-    font-family: 'Lato';
-    font-style: normal;
+.price{
+    font-size: 24px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-
+    color: gray;
 }
-
 .btn{
     /* position: absolute; */
-    left: 62.5%;
-    right: 20.83%;
-    top: 83.33%;
-    bottom: 0%;
-    width: 12rem;
-    background-color: #3BB77E;   
-}
- 
-.description{
-    
-box-sizing: border-box;
-
-/* position: absolute; */
-position: relative;
-width: 1182px;
-height: 1090.67px;
-left: 371.27px;
-/* top: 1180.62px; */
-margin-bottom: 385rem;
-
-/* NestMart-White */
-
-background: #FFFFFF;
-/* NestMart-Background_grey-1 */
-
-border: 1px solid #434950;
-border-radius: 15px 
-}
-
-.head{
-    width: 98px;
-height: 15px;
-
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 15px;
-/* identical to box height, or 83% */
-
-letter-spacing: -0.0004em;
-margin-right: 4rem;
+width: 175.56px;
+height: 50px;
+left: 127.47px;
+top: 0px;
 
 /* NestMart-Brand 1 */
 
-color: #3BB77E;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+background: #3BB77E;
+border-radius: 4px;
 }
-  
-.Add{
-    width: 127px;
-height: 15px;
 
+.heading{
+    width: 623.59px;
+height: 102.68px;
+left: 1416.66px;
+top: 2329.56px;
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 700;
-font-size: 18px;
-line-height: 15px;
-/* identical to box height, or 83% */
-
-letter-spacing: -0.0004em;
-
-/* NestMart-Text-Muted */
-
-color: #B6B6B6;
-
-}
-
-.review{
-    width: 98px;
-height: 15px;
-
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 15px;
-/* identical to box height, or 83% */
-
-letter-spacing: -0.0004em;
-
-/* NestMart-Text-Muted */
-
-color: #B6B6B6;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-.para{
-    /* position: absolute; */
-width: 1075.8px;
-height: 158.08px;
-left: 423.37px;
-top: 1314.25px;
-
-/* NestMart/Text Medium */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-}
-.header{
-   
-
-display: flex;
-/* flex-direction: row; */
-align-items: flex-start;
-padding: 0px;
-gap: 25px;
-
-/* position: absolute; */
-width: 553px;
-height: 45px;
-left: 423.37px;
-top: 1231px;
-}
-
-
-.para1{
-    width: 1075.8px;
-height: 84.23px;
-left: 423.37px;
-top: 1535.13px; 
-
-/* NestMart/Text Medium */
-
- font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-}
-
-
-para2{
-    position: absolute;
-    width: 1075.8px;
-    height: 79.11px;
-    left: 423.37px;
-    top: 1788.62px; 
-    
-    /* NestMart/Text Medium */
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-    
-    
-    /* NestMart-TextBody */
-    
-    color: #7E7E7E;
-}
-.table{
-    /* position: absolute; */
-width: 134.09px;
-height: 138.97px;
-left: 430.65px;
-top: 1634.51px;
-}
-.group{
-    width: 4.01px;
-height: 119.99px;
-left: 430.65px;
-top: 1641.99px;
-}
-.li1{
-    width: 119.09px;
-height: 22.99px;
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-color: #7E7E7E;
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-.li2{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-}
-
-.li3{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-}
-
-.li4{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-}
-
-.li5{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-}
-
-.frame{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 6px;
-    
-    position: absolute;
-    width: 119.09px;
-    height: 138.97px;
-    left: 568.83px;
-    top: 1634.51px;
-
-}
-
-.fr1{
-    /* flex-direction: column;  */
- align-items: flex-start;
-    padding: 0px;
-    gap: 6px;
-    
-    /* position: absolute; */
-    width: 119.09px;
-    height: 138.97px;
-    left: 568.83px;
-    top: 1134.51px;
-    flex: none;
-    order: 0;
-
-
-}
-
-.fr2{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-
-}
-
-.fr3{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 2;
-flex-grow: 0;
-}
-
-.f4{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 3;
-flex-grow: 0;
-}
-
-.f5{
-    width: 119.09px;
-height: 22.99px;
-
-/* NestMart/ Text xs */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 4;
-flex-grow: 0;
-}
-
-.head1{
-    /* position: absolute; */
-    width: 143px;
-    height: 32px;
-    left: 423.37px;
-    top: 1885.26px;
-    
-    /* NestMart/Heading 5 */
-    
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-    /* identical to box height, or 160% */
-    
-    letter-spacing: -0.0004em;
-    
-    /* NestMart-TextHeading */
-    
-    color: #253D4E;
-
-}
-
-.para3{
-    /* position: absolute; */
-width: 1075.8px;
-height: 57px;
-left: 423.37px;
-top: 1932.41px;
-
-/* NestMart/Text Medium */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-}
-
-head2{
-    width: 170px;
-height: 32px;
-left: 423.37px;
-top: 2001.86px;
-
-/* NestMart/Heading 5 */
-
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 32px;
-/* identical to box height, or 160% */
-
-letter-spacing: -0.0004em;
-
-/* NestMart-TextHeading */
-
+font-size: 60px;
+line-height: 48px;
+/* letter-spacing: -0.0004em; */
 color: #253D4E;
-
-
-}
-
-.para4{
-    /* position: absolute; */
-width: 1075.8px;
-height: 79.11px;
-left: 423.37px;
-top: 2052.86px;
-
-/* NestMart/Text Medium */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
-}
-
-.head3{
-    width: 91px;
-height: 32px;
-left: 423.37px;
-top: 2144.43px;
-
-/* NestMart/Heading 5 */
-
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 32px;
-/* identical to box height, or 160% */
-
-letter-spacing: -0.0004em;
-
-/* NestMart-TextHeading */
-
-color: #253D4E;
-
-}
-
-.para5{
-    width: 430.7px;
-height: 34.04px;
-left: 423.37px;
-top: 2185.24px;
-
-/* NestMart/Text Medium */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
-
-
-/* NestMart-TextBody */
-
-color: #7E7E7E;
-
+justify-content: center;
+align-items: center;
+margin-left: 5rem;
 }
